@@ -67,7 +67,7 @@ public class LoginTest extends Base {
 		try {
 			excelReader = new MyXLSReader("src\\test\\resources\\tutorialsNinjaData.xlsx");
 			data = DataUtil.getTestData(excelReader, "LoginTest", "Data");
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			e.printStackTrace();
 
 		}
